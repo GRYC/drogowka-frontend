@@ -68,11 +68,12 @@ hr.small {
 #navbar {
     width: 100%;
     height: 70px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #FAFAFA;
     z-index: 1000;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 #navbar .brand {
@@ -82,13 +83,18 @@ hr.small {
 #navbar .menu {
     float: right;
     list-style-type: none;
-    margin: 25px 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
 #navbar .menu li {
     display: inline-block;
-    padding-left: 10px;
+    padding: 23px 7px;
+}
+
+#navbar .menu li.active {
+    background: #EEEEEE;
+    border-bottom: 2px solid green;
 }
 
 #navbar .menu li a {
